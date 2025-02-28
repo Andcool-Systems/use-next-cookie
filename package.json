@@ -1,0 +1,28 @@
+{
+    "name": "use-next-cookie",
+    "version": "0.1.0",
+    "author": "AndcoolSystems",
+    "license": "MIT",
+    "description": "A simple hook for using cross-environment cookies in Next.js",
+    "main": "dist/index.js",
+    "module": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "type": "module",
+    "peerDependencies": {
+        "next": "^15.2.0",
+        "react": "^19.0.0"
+    },
+    "scripts": {
+        "build": "tsc"
+    },
+    "files": [
+        "dist/"
+    ],
+    "keywords": [],
+    "dependencies": {
+        "@types/react": "^19.0.10",
+        "react": "^19.0.0",
+        "tslib": "^2.8.1",
+        "typescript": "^5.7.3"
+    }
+}
