@@ -2,13 +2,6 @@
 
 A lightweight and convenient hook for working with cookies in Next.js — a unified API for both server and client environments, where values are initially set based on server-side data.
 
-## 🔥 Features
-
-- ✅ Retrieve server-side cookies on the client without delay
-- ✅ Automatic synchronization of cookies between server and client after hydration
-- ✅ Flexible configuration for updating client-side data
-- ✅ API for accessing server-side cookies in a client environment
-
 ## ⚡️ Why is this needed?
 
 Using server-side cookies helps prevent brief flashes of incorrect UI states. For example, without this hook, a user might first see a login form and only then see the authenticated interface after a state update. With `useNextCookie`, the user immediately sees the correct UI corresponding to their authentication status.
