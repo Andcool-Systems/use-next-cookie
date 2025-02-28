@@ -1,9 +1,10 @@
 {
     "name": "use-next-cookie",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "author": "AndcoolSystems",
     "license": "MIT",
     "description": "A simple hook for using cross-environment cookies in Next.js",
+    "repository": "https://github.com/Andcool-Systems/use-next-cookie",
     "main": "dist/index.js",
     "module": "dist/index.js",
     "types": "dist/index.d.ts",
