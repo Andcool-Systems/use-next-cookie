@@ -39,6 +39,8 @@ The `useNextCookie` hook allows retrieving server-side cookies on the client wit
 Example usage:
 
 ```tsx
+'use client';
+
 import { useNextCookie } from 'use-next-cookie';
 import { useState, useEffect } from 'react';
 
@@ -47,6 +49,7 @@ export default function Component() {
     const [loggedIn, setLoggedIn] = useState<boolean>(!!session);
 
     useEffect(() => {
+        // If cookie changes
         setLoggedIn(!!session);
     }, [session]);
 
@@ -69,6 +72,8 @@ When the cookie changes, the hook triggers `useEffect`, causing data updates and
 If you only need **server-side** cookies (without client updates), use `useCookiesServer`:
 
 ```tsx
+'use client';
+
 import { useCookiesServer } from 'use-next-cookie';
 
 export default function Component() {
