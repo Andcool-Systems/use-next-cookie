@@ -1,10 +1,10 @@
 # useNextCookie 🍪
 
-A lightweight and convenient hook for working with cookies in Next.js — a unified API for both server and client environments, where values are initially set based on server-side data.
+A lightweight and convenient React hook that provides access to cookies **before** the full hydration of the DOM tree.
 
 ## ⚡️ Why is this needed?
 
-Using server-side cookies helps prevent brief flashes of incorrect UI states. For example, without this hook, a user might first see a login form and only then see the authenticated interface after a state update. With `useNextCookie`, the user immediately sees the correct UI corresponding to their authentication status.
+Using server-side cookies helps prevent brief flashes of incorrect UI states. For example, without this hook, a user might briefly see a login form before the fully hydrated page displays the authenticated interface. With `useNextCookie`, the user immediately sees the correct UI based on their authentication status.
 
 ## 🚀 Installation
 
@@ -49,7 +49,8 @@ export default function Component() {
     const [loggedIn, setLoggedIn] = useState<boolean>(!!session);
 
     useEffect(() => {
-        // If cookie changes
+        // If cookie changes in hydration process, it triggers 
+        // useEffect AFTER hydration
         setLoggedIn(!!session);
     }, [session]);
 

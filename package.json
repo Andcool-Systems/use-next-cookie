@@ -1,9 +1,9 @@
 {
     "name": "use-next-cookie",
-    "version": "0.1.5",
+    "version": "0.1.7",
     "author": "AndcoolSystems",
     "license": "MIT",
-    "description": "A simple hook for using cross-environment cookies in Next.js",
+    "description": "A lightweight and convenient React hook that provides access to cookies before the full hydration of the DOM tree.",
     "repository": "https://github.com/Andcool-Systems/use-next-cookie",
     "main": "dist/index.js",
     "module": "dist/index.js",
@@ -22,7 +22,11 @@
     "files": [
         "dist/"
     ],
-    "keywords": [],
+    "keywords": [
+        "Cookie",
+        "Next.Js",
+        "Client"
+    ],
     "dependencies": {
         "@types/react": "^19.0.10",
         "next": "^15.2.0",
