@@ -1,6 +1,6 @@
 {
     "name": "use-next-cookie",
-    "version": "0.1.7",
+    "version": "0.1.8",
     "author": "AndcoolSystems",
     "license": "MIT",
     "description": "A lightweight and convenient React hook that provides access to cookies before the full hydration of the DOM tree.",
@@ -13,8 +13,8 @@
         ".": "./dist/index.js"
     },
     "peerDependencies": {
-        "next": "^15.2.0",
-        "react": "^19.0.0"
+        "react": ">18.2.0",
+        "next": ">14.0.0"
     },
     "scripts": {
         "build": "tsc"
@@ -29,8 +29,6 @@
     ],
     "dependencies": {
         "@types/react": "^19.0.10",
-        "next": "^15.2.0",
-        "react": "^19.0.0",
         "tslib": "^2.8.1",
         "typescript": "^5.7.3"
     }
